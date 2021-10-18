@@ -42,11 +42,11 @@ class Recipes extends Component {
 
             <label>
                 Recipe Name:
-                <input type="text" name="name"  onChange={evt => this.updateInputName(evt)}/>
+                <input type="text" name="recipe-name"  onChange={evt => this.updateInputName(evt)}/>
             </label>
             <label>
                 Recipe Instructions:
-                <input type="text" name="Submit" onChange={evt => this.updateInputInstructions(evt)}/>
+                <input type="text" name="recipe-instructions" onChange={evt => this.updateInputInstructions(evt)}/>
             </label>
             <button type="button" onClick={this.submitRecipe} className="btn btn-secondary">Submit</button>}
         </form>
