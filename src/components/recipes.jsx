@@ -40,11 +40,11 @@ class Recipes extends Component {
         console.log('addForm')
         if(this.state.clicked === true) return <form>
 
-            <label>
+            <label name="recipe-name">
                 Recipe Name:
                 <input type="text" name="recipe-name"  onChange={evt => this.updateInputName(evt)}/>
             </label>
-            <label>
+            <label name="recipe-instructions">
                 Recipe Instructions:
                 <input type="text" name="recipe-instructions" onChange={evt => this.updateInputInstructions(evt)}/>
             </label>
